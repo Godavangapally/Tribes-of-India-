@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagaland</title>
+    <link rel="stylesheet" href="state.css">
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>NAGALAND</h1></header>
+    <br>
+    <br>
+    <a class="telanganaimage"> <img src="https://www.burningcompass.com/countries/india/maps/nagaland-district-map.jpg" alt="Telanganamap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:'Times New Roman';">History</h2>
+      <hr>
+     <p><br>Nagaland, located in northeastern India, is a state renowned for its scenic beauty, vibrant culture, and rich heritage. The importance of its tribes lies at the heart of Nagaland's identity and contributes significantly to its socio-cultural fabric. Nagaland is home to numerous indigenous tribes, each with its own distinct language, customs, and traditions. The state boasts over 16 major tribes and many sub-tribes, each contributing to the cultural mosaic of Nagaland. This diversity adds vibrancy to the state's festivals, arts, crafts, music, and dance forms. The tribes of Nagaland play a crucial role in preserving the state's rich cultural heritage. Through oral traditions, rituals, festivals, and handicrafts, they pass down their customs and knowledge from one generation to the next. This preservation helps maintain the unique identity of Nagaland amidst modernization and external influences.The tribes of Nagaland contribute significantly to the state's economy through various economic activities. Agriculture, animal husbandry, and handicrafts are major sources of livelihood for many tribal communities. Additionally, tourism-related activities, such as homestays, guide services, and souvenir sales, provide employment opportunities and generate income for tribal households.
+    </p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in Nagaland</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"> <h3 style="color: brown;text-decoration: underline;">Angami Tribe</h3>
+            <div class="telanganaimage" > <img src="https://i.pinimg.com/474x/02/61/18/026118e02f634481e0b4bc4be4ac3f5d.jpg" alt="gondtribes" height="300px"style="align-items:center" ></div>
+            <p style="color: black; text-decoration:none;"><br>
+                 The Angami tribe is one of the major Naga tribes inhabiting the central and southern parts of Nagaland. They are known for their rich cultural heritage, including traditional attire adorned with intricate designs, as well as festivals such as Sekrenyi and Moatsu. The Angami language belongs to the Tibeto-Burman language family.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">AO Tribe</h3>
+            <div class="telanganaimage"> <img src="https://images-htschool.hindustantimes.com/wp-content/uploads/2022/05/Ao-tribe-nagaland-1.jpg" alt="Lambada" height="300px"style="align-items:center;margin-left=200px;text-align=justify"  ></div>
+        <p > The Ao tribe is one of the largest Naga tribes residing in the Mokokchung district of Nagaland. They are renowned for their vibrant culture, which includes festivals like Moatsu and Tsungremong, as well as traditional crafts such as handloom weaving and basketry. The Ao language is part of the Tibeto-Burman language family.
+         <br>
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Konyak Tribe</h3>
+            <div class="telanganaimage" > <img src="https://d18x2uyjeekruj.cloudfront.net/wp-content/uploads/2021/12/kon.jpg"alt="chenchutribes" height="300px"style="align-items:center" ></div>
+        <p><br>
+             The Konyak tribe is one of the most well-known Naga tribes, primarily residing in the Mon district of Nagaland. They are famous for their warrior traditions, intricate tattoos, and headhunting practices (which have now ceased). The Konyak tribe celebrates festivals like Aoling Monyu and Molung, and their language is part of the Tibeto-Burman language family
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of Nagaland
+        <a href="nagalandtribes.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

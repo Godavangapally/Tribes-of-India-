@@ -1,0 +1,184 @@
+function chatBot() {
+
+    this.input;
+    
+    this.respondTo = function (input) {
+  
+      this.input = input.toLowerCase();
+  
+      if (this.match('(hy|hello|hi)'))
+      return "Hi there. I am Q";
+  
+      if (this.match('(how are you|hw r u|how r u )'))
+      return "I'm doing great,thanks for asking!";
+  
+      if (this.match('(how old are you)'))
+      return "Infinity";
+  
+      if (this.match('(what is your name)'))
+      return "Robot";
+
+      if(this.match('(i love you|i luv u|143)'))
+      return"I love you too";
+
+      if (this.match('(section)'))
+      return "5564654757";
+    if (this.match('tribes of telangana|telangana tribes'))
+       return "Telangana, a region steeped in cultural diversity, is home to various indigenous tribes enriching its social tapestry. Among them, the Lambadas, Gonds, Kolams, Yerukulas, Chenchus, and Thotis stand out. The Lambadas, known for their vibrant attire and skilled handicrafts, have settled across the region, while the Gonds maintain their animistic beliefs and intricate art forms. The Kolams, residing in forested areas, have unique customs, while the Yerukulas and Chenchus, with their deep connection to nature, preserve traditional lifestyles. Additionally, the Thotis, famed for toddy tapping, contribute to Telangana's cultural mosaic, collectively embodying the state's rich heritage amidst modernization.(To know More about Telangana tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of tamil nadu|tamil nadu tribes'))
+        return"Tamil Nadu, situated in southern India, is home to indigenous tribes such as the Irulas and Todas, each contributing to the state's diverse cultural landscape. The Irulas, predominantly found in forested regions, possess deep knowledge of local flora and fauna, traditionally relying on hunting and gathering for sustenance while adapting to modern livelihoods. Meanwhile, the Todas, residing in the Nilgiri Hills, maintain their unique cultural practices centered around traditional housing and dairy-based economies, despite facing challenges from encroachment and modernization. Both tribes play integral roles in preserving Tamil Nadu's rich cultural heritage amidst the ever-evolving social and economic landscape.(To know More about Tamil Nadu tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of kerala|kerala tribes'))
+        return"Kerala, renowned for its cultural diversity, is home to several indigenous tribes, including the Kurichiyas, Irulas, Paniyas, and Mannan. The Kurichiyas, residing in the hilly regions, are known for their agricultural practices and distinct rituals. The Irulas, primarily found in forested areas, are skilled hunters and gatherers with extensive knowledge of local flora and fauna. Meanwhile, the Paniyas traditionally engage in agriculture and labor-intensive occupations, contributing to the state's economy. The Mannan tribe, concentrated in the eastern parts, have a unique cultural identity characterized by their traditional customs and practices. Together, these tribes play a vital role in Kerala's rich cultural heritage, preserving their traditions amidst the state's modernization and socio-economic changes.(To know More about Kerala tribes click on Map option on the Navbar and click your required state.)" 
+     if (this.match('tribes of karnataka|karnataka tribes'))
+         return"Karnataka, a state renowned for its cultural diversity, is home to indigenous tribes such as the Soligas, Jenu Kurubas, Siddhis, and Hakki-Pikkis, each contributing to the state's vibrant tapestry. The Soligas, residing in the Western Ghats, possess deep knowledge of the forest and practice unique agricultural methods. Meanwhile, the Jenu Kurubas are skilled honey gatherers known for their rich oral traditions. The Siddhis, with their African heritage, bring distinct cultural elements to Karnataka, while the Hakki-Pikkis, as nomadic tribes, add to the region's cultural mosaic. Despite facing socio-economic challenges, these tribes preserve their traditions and play a crucial role in Karnataka's cultural heritage.(To know More about Karnataka tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of andhra pradesh|andhra pradesh tribes'))
+         return"Andhra Pradesh, situated in southeastern India, is home to several indigenous tribes, each with its own distinct cultural practices and traditions. Some of the notable tribes in the state include the Koyas, Lambadas, Yanadis, and Chenchus. The Koyas, primarily found in the hilly and forested regions, are known for their agricultural practices and traditional medicine knowledge. The Lambadas, also known as Banjaras, are a nomadic tribe renowned for their vibrant attire, intricate embroidery, and folk music and dance. The Yanadis predominantly inhabit the coastal areas and are traditionally involved in occupations such as fishing and agriculture. The Chenchus, residing in the Nallamala forest region, are skilled hunter-gatherers with a deep connection to their natural surroundings. Despite facing challenges such as displacement and socio-economic marginalization, these tribes continue to preserve their cultural heritage and contribute to the rich tapestry of Andhra Pradesh's cultural diversity.(To know More about Andhra Pradesh tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of Goa|Goa tribes'))
+     return"Goa, a coastal state in western India, is home to several indigenous tribes, although their numbers have dwindled over the years. The most prominent among them are the Gauda, Kunbi, Velip, and Dhangar tribes. The Gauda and Kunbi tribes are primarily engaged in agriculture, with the Kunbis traditionally being rice cultivators. The Velip tribe, concentrated in the forested regions, historically practiced hunting and gathering but have increasingly adopted settled agricultural lifestyles. The Dhangars, traditionally shepherds and pastoralists, are known for their expertise in animal husbandry. Despite facing challenges such as land alienation and cultural assimilation, these tribes continue to maintain aspects of their traditional customs and contribute to the cultural diversity of Goa.(To know More about Goa tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of Chattisgarh|Chattisgarh tribes'))
+     return"Chhattisgarh, located in central India, is home to numerous indigenous tribes, each with its own unique cultural heritage. Some of the prominent tribes in the state include the Gonds, Baigas, Korbas, and Dhurvas. The Gonds are one of the largest tribal communities in Chhattisgarh, known for their rich artistic traditions, including painting, music, and dance. The Baigas, residing in the forested regions, are skilled herbalists and practitioners of traditional medicine, with a deep understanding of local flora and fauna. The Korbas, traditionally associated with agriculture and forest-based livelihoods, have a distinctive cultural identity reflected in their customs and rituals. The Dhurvas, primarily found in Bastar district, are known for their unique language and cultural practices, maintaining a strong connection to their ancestral lands. Despite facing challenges such as displacement and exploitation, these tribes continue to preserve their cultural heritage and contribute to the diverse tapestry of Chhattisgarh's cultural landscape.(To know More about Chattisgarh tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of odisha|odisha tribes'))
+     return"Odisha, located on the eastern coast of India, is renowned for its rich cultural diversity, with numerous indigenous tribes adding to its vibrant tapestry. Among the prominent tribes in the state are the Santals, Dongria Kondhs, Bonda, and Juang tribes. The Santals, primarily concentrated in the western regions, are known for their vibrant music, dance, and traditional craftsmanship. The Dongria Kondhs, residing in the hilly regions of the Eastern Ghats, maintain a close connection with nature and practice unique agricultural techniques. The Bonda tribe, inhabiting the remote hill areas of Malkangiri district, have preserved their distinctive language, attire, and customs, living in relative isolation. The Juang tribe, predominantly found in Keonjhar and Dhenkanal districts, are skilled artisans and hunters with a rich oral tradition and unique cultural practices. Despite facing challenges such as displacement and socio-economic marginalization, these tribes continue to uphold their cultural heritage and contribute significantly to the cultural mosaic of Odisha.(To know More about Odisha tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of maharashtra|maharashtra tribes'))
+    return"Maharashtra, a state in western India, is home to several indigenous tribes, each contributing to the state's diverse cultural landscape. Notable among them are the Warlis, Bhils, Kolis, and Katkaris. The Warlis, primarily residing in the Thane and Palghar districts, are known for their distinctive art forms, including intricate tribal paintings depicting scenes from daily life and nature. The Bhils, one of the largest tribal communities in Maharashtra, are spread across various regions and traditionally engage in agriculture and forestry-related activities. The Kolis, primarily coastal dwellers, are known for their expertise in fishing and maritime activities, while the Katkaris, predominantly found in the hilly and forested regions, have a deep connection to nature and practice traditional livelihoods such as hunting and gathering. Despite facing challenges such as land alienation and socio-economic marginalization, these tribes continue to preserve their cultural heritage and contribute to the rich cultural tapestry of Maharashtra.(To know More about Maharashtra tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of madhya pradesh|madhya pradesh tribes'))
+     return"Madhya Pradesh, located in central India, is home to a diverse array of indigenous tribes, each with its own distinct cultural identity. Notable tribes in the state include the Gonds, Bhils, Baigas, and Saharia. The Gonds, one of the largest tribal communities in India, are renowned for their rich artistic traditions, including intricate paintings, music, and dance forms. The Bhils, spread across various regions of Madhya Pradesh, are traditionally skilled in agriculture, forestry, and hunting. The Baigas, predominantly residing in the forested areas, are known for their deep knowledge of herbal medicine and sustainable agricultural practices. The Saharia tribe, primarily found in the central and northern parts, have a unique cultural heritage reflected in their customs, rituals, and traditional occupations such as gathering forest produce. Despite facing challenges such as land displacement and socio-economic marginalization, these tribes continue to preserve their cultural heritage and contribute to the cultural diversity of Madhya Pradesh.(To know More about Madhya pradesh tribes click on Map option on the Navbar and click your required state.)"
+
+     if (this.match('tribes of gujarat|gujarat tribes'))
+     return"Gujarat, situated in western India, is home to several indigenous tribes, each with its own rich cultural heritage. Notable tribes in the state include the Bhil, Rabari, Garasia, and Siddi communities. The Bhil tribe, one of the largest tribal groups in Gujarat, primarily resides in the hilly and forested regions of the state. They are known for their traditional knowledge of agriculture, forestry, and handicrafts. The Rabari community, predominantly pastoralists, have a distinct nomadic lifestyle, moving with their herds across the vast expanses of Gujarat's rural landscapes. The Garasia tribe, inhabiting the hilly regions of southern Gujarat, have a unique blend of cultural influences from both Hindu and tribal traditions. The Siddi community, with African ancestry, has settled primarily along the coastal areas of Gujarat, preserving their unique cultural practices and contributing to the state's cultural diversity. Despite facing challenges such as land alienation and socio-economic marginalization, these tribes continue to maintain their cultural heritage and traditional way of life in Gujarat.(To know More about Gujarat tribes click on Map option on the Navbar and click your required state.)"
+
+     if (this.match('tribes of west bengal|west bengal tribes'))
+     return"West Bengal, located in eastern India, is home to several indigenous tribes, each contributing to the state's cultural diversity. Notable tribes in West Bengal include the Santals, Lodhas, Totos, and Bauris. The Santals, one of the largest tribal communities in the state, are primarily concentrated in the districts of Purulia, Bankura, and Birbhum. They are known for their vibrant music, dance, and traditional craftsmanship. The Lodha tribe, predominantly found in the western parts of the state, traditionally practice agriculture and forest-based livelihoods. The Totos, residing in the hilly terrain of the Dooars region, have a unique cultural heritage and are known for their knowledge of herbal medicine and sustainable farming practices. The Bauris, spread across various districts, are traditionally engaged in occupations such as weaving, pottery, and agriculture. Despite facing challenges such as land displacement and socio-economic marginalization, these tribes continue to uphold their cultural traditions and contribute to the diverse cultural mosaic of West Bengal.(To know More about West Bengal tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of jharkhand|jharkhand tribes'))
+     return"Jharkhand, a state in eastern India, is home to numerous indigenous tribes, each with its own rich cultural heritage. Notable tribes in Jharkhand include the Santhal, Munda, Oraon, and Ho communities. The Santhal tribe, one of the largest tribal groups in the state, is known for its vibrant music, dance forms, and traditional artistry. The Munda tribe, spread across various regions of Jharkhand, has a deep connection to agriculture and forestry-related activities, preserving its unique customs and rituals. The Oraon community, primarily residing in the Chotanagpur Plateau, has a rich cultural tradition reflected in its festivals, folk songs, and dance forms. The Ho tribe, concentrated in the hilly regions of Singhbhum, have a distinct cultural identity and maintain traditional livelihoods such as agriculture, animal husbandry, and handicrafts. Despite facing challenges such as land alienation and socio-economic marginalization, these tribes continue to preserve their cultural heritage and contribute significantly to the cultural diversity of Jharkhand.(To know More about Jharkhand tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of bihar|bihar tribes'))
+     return"Bihar, a state in eastern India, is home to several indigenous tribes, each adding to the state's diverse cultural landscape. Notable tribes in Bihar include the Santhal, Munda, Oraon, and Bhumij communities. The Santhal tribe, one of the largest tribal groups in the state, primarily inhabits the southern regions and is known for its vibrant music, dance forms, and traditional artistry. The Munda tribe, spread across various districts of Bihar, traditionally practices agriculture and forestry-related activities, preserving its unique customs and rituals. The Oraon community, concentrated in areas like Gumla and Lohardaga, has a rich cultural heritage reflected in its festivals, folk songs, and dance forms. The Bhumij tribe, found in regions such as Singhbhum, maintains traditional occupations such as agriculture, hunting, and weaving. Despite facing challenges such as land alienation and socio-economic marginalization, these tribes continue to uphold their cultural traditions and contribute significantly to the cultural diversity of Bihar.(To know More about Bihar tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of uttar pradesh|uttar pradesh tribes'))
+     return"Uttar Pradesh, a state in northern India, is home to various indigenous tribes, although their numbers are relatively small compared to other states in India. Some of the notable tribes in Uttar Pradesh include the Tharu, Bhotia, and Raji communities. The Tharu tribe, primarily found in the Terai region bordering Nepal, are known for their unique cultural practices, agricultural expertise, and intricate bamboo craftsmanship. The Bhotia tribe, residing in the higher altitudes of the Himalayan foothills, have Tibetan origins and are involved in trans-Himalayan trade, animal husbandry, and agriculture. The Raji tribe, concentrated in the districts of Pilibhit and Shahjahanpur, have a distinct cultural identity and are traditionally engaged in farming, hunting, and gathering. Despite their relatively small numbers and challenges such as land encroachment and limited access to education and healthcare, these tribes continue to preserve their cultural heritage and contribute to the cultural diversity of Uttar Pradesh.(To know More about Uttar Pradesh tribes click on Map option on the Navbar and click your required state.)"
+    if (this.match('tribes of rajasthan|rajasthan tribes'))
+    return"Rajasthan, a state in northwestern India, is home to several indigenous tribes, each with its own unique cultural heritage. Notable tribes in Rajasthan include the Bhils, Meenas, Garasias, and Rabaris. The Bhil tribe, one of the largest tribal communities in the state, predominantly resides in the southern and southeastern regions. They are known for their vibrant music, dance forms, and traditional artistry. The Meena tribe, spread across various districts of Rajasthan, traditionally engages in agriculture, forestry-related activities, and handicrafts, preserving its unique customs and rituals. The Garasia community, found in areas such as Sirohi and Udaipur, have a distinct cultural identity and are traditionally involved in farming, animal husbandry, and weaving. The Rabari tribe, concentrated in the desert regions of western Rajasthan, are pastoral nomads known for their expertise in animal husbandry and intricate embroidery. Despite facing challenges such as droughts and socio-economic marginalization, these tribes continue to uphold their cultural traditions and contribute significantly to the cultural diversity of Rajasthan.(To know More about Rajasthan tribes click on Map option on the Navbar and click your required state.)"
+     if (this.match('tribes of haryana|haryana tribes'))
+    return".Haryana, a state in northern India, is home to several indigenous tribes, although their numbers are relatively small compared to other states. Notable tribes in Haryana include the Gujjars, Ahirs, and Meos. The Gujjar tribe, traditionally engaged in animal husbandry and agriculture, has a significant presence in the state's rural areas. The Ahir community, primarily found in the regions of southern Haryana, has a strong agricultural background and also has a rich martial tradition. The Meo community, concentrated in the Mewat region, has a distinct cultural identity and is primarily involved in agriculture and animal husbandry. Despite their relatively small numbers, these tribes have contributed to the cultural diversity of Haryana and continue to uphold their traditional customs and practices.(To know More about Haryana tribes click on Map option on the Navbar and click your required state.)"
+
+     if (this.match('tribes of punjab|punjab tribes'))
+    return"Punjab, a state in northern India, has a rich cultural heritage, but it is not particularly known for its indigenous tribes. The population of tribal communities in Punjab is relatively small compared to other states in India. However, there are some tribal groups such as the Bhantu, Bazigar, and Gaddi communities scattered across the state. The Bhantu community is traditionally associated with folk music and dance, while the Bazigar community has historically been involved in traditional occupations such as acrobatics and entertainment. The Gaddi community, although more commonly found in the neighboring state of Himachal Pradesh, also has a presence in parts of Punjab, primarily engaged in animal husbandry and agriculture. Despite their smaller numbers and lesser visibility, these tribal communities contribute to the cultural diversity of Punjab and maintain their unique traditions and customs.To know More about punjab tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of uttarakhand|uttarakhand tribes'))
+    return"Uttarakhand, a state in northern India, is home to several indigenous tribes, each with its own distinct cultural heritage. Notable tribes in Uttarakhand include the Bhotiya, Tharu, Jaunsari, and Raji communities. The Bhotiya tribe, primarily found in the higher altitudes of the Himalayas, have Tibetan origins and are known for their expertise in trade, animal husbandry, and agriculture. The Tharu community, residing in the Terai region, are skilled agriculturalists and have a deep knowledge of herbal medicine. The Jaunsari tribe, concentrated in the Jaunsar-Bawar region, have a rich cultural heritage reflected in their traditional festivals, folk music, and dance forms. The Raji community, found in districts like Pithoragarh and Champawat, are traditionally engaged in farming, hunting, and gathering. Despite facing challenges such as land encroachment and limited access to education and healthcare, these tribes continue to preserve their cultural heritage and contribute to the cultural diversity of Uttarakhand..To know More about uttarakhand tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of himachal pradesh|himachal pradesg tribes'))
+    return"Himachal Pradesh, nestled in the Himalayas, is home to several indigenous tribes, each contributing to the state's rich cultural tapestry. Notable tribes in Himachal Pradesh include the Gaddi, Kinnauri, Gujjar, and Pangwala communities. The Gaddi tribe, primarily found in the regions of Chamba and Kangra, are pastoralists known for their expertise in animal husbandry, particularly sheep and goats. The Kinnauri tribe, inhabiting the rugged terrain of Kinnaur district, have a distinct cultural identity and are traditionally involved in agriculture, trade, and horticulture. The Gujjar community, with origins in the plains of North India, have settled in various parts of Himachal Pradesh and are primarily engaged in animal husbandry and agriculture. The Pangwala tribe, found in the Pangi Valley of Chamba district, are known for their unique cultural practices, including traditional attire and folk music. Despite facing challenges such as harsh climatic conditions and limited infrastructure, these tribes continue to uphold their cultural traditions and contribute to the diverse cultural mosaic of Himachal Pradesh.To know More about Himachal Pradesh tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of jammu kashmir|jammu kashmir tribes'))
+    return"Jammu and Kashmir, located in the northernmost part of India, is known for its diverse cultural heritage, which includes several indigenous tribes. Notable tribes in Jammu and Kashmir include the Gujjar, Bakarwal, Balti, and Ladakhi communities. The Gujjar and Bakarwal communities are nomadic pastoralists, primarily inhabiting the mountainous regions of the state. They are known for their expertise in animal husbandry, particularly sheep and goats, and their traditional way of life involves seasonal migration in search of grazing lands. The Balti community, mainly found in the Ladakh region, has Tibetan origins and is known for its distinctive cultural practices, including architecture, cuisine, and festivals. The Ladakhi community, also residing in the Ladakh region, has a rich cultural heritage characterized by Buddhism, traditional arts, and vibrant festivals. Despite facing challenges such as harsh climatic conditions and limited access to resources, these tribes continue to preserve their cultural traditions and contribute to the unique cultural landscape of Jammu and Kashmir.To know More about Jammu Kashmir tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of sikkim|sikkim tribes'))
+    return"Sikkim, nestled in the Himalayas, is home to several indigenous tribes, each contributing to the state's diverse cultural heritage. Notable tribes in Sikkim include the Lepcha, Bhutia, and Limbu communities. The Lepcha tribe, considered the indigenous inhabitants of Sikkim, have a rich cultural tradition that includes unique music, dance forms, and craftsmanship. The Bhutia community, with Tibetan origins, has a significant presence in Sikkim and is known for its distinctive architecture, cuisine, and traditional clothing. The Limbu tribe, primarily found in eastern Sikkim, have their own language, customs, and festivals, contributing to the cultural diversity of the state. Despite facing challenges such as modernization and environmental changes, these tribes continue to preserve their cultural heritage and play a vital role in the social fabric of Sikkim.To know More about sikkim tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of arunachal pradesh|arunachal pradesh tribes'))
+    return"Arunachal Pradesh, situated in northeastern India, is home to numerous indigenous tribes, each with its own distinct cultural identity. Notable tribes in Arunachal Pradesh include the Adi, Nyishi, Apatani, and Galo communities. The Adi tribe, one of the largest ethnic groups in the state, primarily resides in the central and eastern regions of Arunachal Pradesh. They are known for their rich cultural heritage, including traditional festivals, handloom weaving, and intricate woodcarving. The Nyishi tribe, concentrated in the western part of the state, are traditionally engaged in agriculture, animal husbandry, and hunting. The Apatani tribe, residing in the Ziro Valley, have a unique agricultural system characterized by wet rice cultivation and are known for their distinctive facial tattoos. The Galo community, primarily found in the West Siang district, have a rich oral tradition, vibrant festivals, and skilled craftsmanship. Despite facing challenges such as infrastructural development and socio-economic changes, these tribes continue to preserve their cultural heritage and contribute to the cultural diversity of Arunachal Pradesh.To know More about Arunachal Pradesh tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of assam|assam tribes'))
+    return"Assam, located in northeastern India, is home to several indigenous tribes, each with its own unique cultural heritage. Notable tribes in Assam include the Bodo, Karbi, Dimasa, and Mishing communities. The Bodo tribe, one of the largest tribal communities in Assam, primarily resides in the Bodoland Territorial Region (BTR) and is known for its rich cultural traditions, including vibrant dances, traditional music, and unique handloom weaving. The Karbi tribe, concentrated in the Karbi Anglong district, have a distinct cultural identity and are traditionally involved in agriculture, hunting, and weaving. The Dimasa community, primarily found in the Dima Hasao district, have a rich cultural heritage characterized by traditional craftsmanship, music, and dance forms. The Mishing tribe, inhabiting the riverine plains of Assam, are known for their expertise in traditional boat-making, fishing, and agriculture. Despite facing challenges such as land disputes and ethnic tensions, these tribes continue to preserve their cultural heritage and contribute to the cultural diversity of Assam.To know More about assam tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of nagaland|nagaland tribes'))
+     return"Nagaland, located in northeastern India, is home to numerous indigenous tribes, each with its own distinct cultural identity. Notable tribes in Nagaland include the Angami, Ao, Lotha, and Konyak communities. The Angami tribe, primarily residing in the Kohima district, are known for their rich cultural heritage, which includes vibrant festivals, traditional dances, and intricate handwoven textiles. The Ao tribe, concentrated in the Mokokchung district, have a unique cultural identity reflected in their traditional architecture, music, and agricultural practices. The Lotha community, predominantly found in the Wokha district, are skilled artisans known for their colorful shawls and unique bamboo craftsmanship. The Konyak tribe, inhabiting the Mon district, are known for their fierce warrior tradition, intricate tattoos, and distinctive headhunting practices in the past. Despite the modernization and socio-economic challenges, these tribes continue to uphold their cultural traditions and contribute to the rich cultural tapestry of Nagaland.To know More about nagaland tribes click on Map option on the Navbar and click your required state."
+     if (this.match('tribes of meghalaya|meghalaya tribes'))
+     return"Meghalaya, situated in northeastern India, is home to several indigenous tribes, each with its own unique cultural heritage. Notable tribes in Meghalaya include the Khasi, Garo, and Jaintia communities. The Khasi tribe, one of the largest ethnic groups in the state, primarily resides in the Khasi Hills region and is known for its matrilineal society, traditional music, and vibrant festivals such as Shad Suk Mynsiem. The Garo community, concentrated in the Garo Hills district, have a rich cultural heritage characterized by their unique architecture, traditional dance forms, and intricate bamboo craftsmanship. The Jaintia tribe, primarily found in the Jaintia Hills district, are known for their expertise in coal mining, traditional handicrafts, and music. Despite facing challenges such as environmental degradation and socio-economic changes, these tribes continue to preserve their cultural traditions and contribute to the cultural diversity of Meghalaya.To know More about meghalaya tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of tripura|tripura tribes'))
+     return"Tripura, located in northeastern India, is home to several indigenous tribes, each contributing to the state's cultural diversity. Notable tribes in Tripura include the Tripuri, Reang, Jamatia, and Halam communities. The Tripuri tribe, the largest ethnic group in the state, primarily resides in the plains and hills of Tripura and is known for its rich cultural heritage, including traditional music, dance forms like the Hojagiri, and colorful festivals such as the Kharchi Puja. The Reang community, also known as Bru, have a significant presence in Tripura and are traditionally engaged in agriculture, animal husbandry, and handicrafts. The Jamatia tribe, concentrated in areas like Dhalai and North Tripura districts, have a distinct cultural identity reflected in their traditional clothing, music, and dance forms. The Halam tribe, primarily found in the hills of South Tripura district, are known for their bamboo and cane crafts, as well as their traditional agricultural practices. Despite facing challenges such as displacement and socio-economic marginalization, these tribes continue to preserve their cultural heritage and contribute to the diverse cultural mosaic of Tripura.To know More about tripura tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of manipur|manipur tribes'))
+     return"Manipur, located in northeastern India, is home to several indigenous tribes, each with its own rich cultural heritage. Notable tribes in Manipur include the Naga, Kuki, Meitei, and Pangal communities. The Naga tribe, comprising various subgroups such as the Tangkhul, Mao, and Poumai, primarily resides in the hills of Manipur and is known for its distinct cultural traditions, including traditional attire, music, and festivals such as the Hornbill Festival. The Kuki community, spread across different regions of Manipur, have a rich cultural heritage characterized by their unique folk dances, handloom weaving, and traditional cuisine. The Meitei tribe, the dominant ethnic group in Manipur, have a long history and cultural traditions that include classical dance forms like Manipuri dance and the Lai Haraoba festival. The Pangal community, primarily comprising Manipuri Muslims, have their own cultural practices and traditions that blend elements of Islam with Manipuri culture. Despite historical and socio-political challenges, these tribes continue to preserve their cultural identity and contribute to the diverse cultural landscape of Manipur.To know More about manipur tribes click on Map option on the Navbar and click your required state."
+
+     if (this.match('tribes of mizoram|mizoram tribes'))
+     return"Mizoram, situated in northeastern India, is home to several indigenous tribes, each with its own unique cultural heritage. Notable tribes in Mizoram include the Mizo, Hmar, Lai, and Mara communities. The Mizo tribe, the largest ethnic group in Mizoram, primarily resides in the hills and valleys of the state and is known for its rich cultural traditions, including traditional dances like the Cheraw (bamboo dance), vibrant festivals such as Chapchar Kut, and intricate handwoven textiles. The Hmar community, concentrated in areas like the Lunglei and Champhai districts, have a distinct cultural identity reflected in their traditional clothing, music, and festivals. The Lai tribe, predominantly found in southern Mizoram, are known for their expertise in handloom weaving and traditional agricultural practices. The Mara community, primarily inhabiting the Saiha and Lawngtlai districts, have their own cultural traditions and are known for their unique festivals and rituals. Despite challenges such as socio-economic disparities and environmental degradation, these tribes continue to uphold their cultural heritage and contribute to the vibrant cultural mosaic of Mizoram.To know More about mizoram tribes click on Map option on the Navbar and click your required state."
+
+
+
+
+
+      return input + ", I don't understand what it is";
+    };
+  
+    
+    this.match = function (regex) {
+  
+      return new RegExp(regex).test(this.input);
+    };
+  }
+  
+  
+  $(function () {
+  
+   
+    var you = 'You';
+    var robot = 'Chatbot';
+  
+   
+    var delayStart = 400;
+    var delayEnd = 800;
+  
+    
+    var bot = new chatBot();
+    var chat = $('.chat');
+    var waiting = 0;
+    $('.busy').text(robot + ' is typing...');
+  
+   
+    var submitChat = function () {
+  
+      var input = $('.input input').val();
+      if (input == '') return;
+  
+      $('.input input').val('');
+      updateChat(you, input);
+  
+      var reply = bot.respondTo(input);
+      if (reply == null) return;
+  
+      var latency = Math.floor(Math.random() * (delayEnd - delayStart) + delayStart);
+      $('.busy').css('display', 'block');
+      waiting++;
+      setTimeout(function () {
+        if (typeof reply === 'string') {
+          updateChat(robot, reply);
+        } else {
+          for (var r in reply) {
+            updateChat(robot, reply[r]);
+          }
+        }
+        if (--waiting == 0) $('.busy').css('display', 'none');
+      }, latency);
+    };
+  
+    var updateChat = function (party, text) {
+  
+      var style = 'you';
+      if (party != you) {
+        style = 'other';
+      }
+  
+      var line = $('<div><span class="party"></span> <span class="text"></span></div>');
+      line.find('.party').addClass(style).text(party + ':');
+      line.find('.text').text(text);
+  
+      chat.append(line);
+  
+      chat.stop().animate({ scrollTop: chat.prop("scrollHeight") });
+  
+    };
+  
+  
+    $('.input').bind('keydown', function (e) {
+      if (e.keyCode == 13) {
+        submitChat();
+      }
+    });
+    $('.input a').bind('click', submitChat);
+  
+  
+    updateChat(robot, 'Hello write me something');
+  
+  });

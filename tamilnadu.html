@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu</title>
+    <link rel="stylesheet" href="state.css">
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>TAMIL NADU</h1></header>
+    <br>
+    <br>
+    <a class="tamilnaduimage"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tamil_Nadu_districts_map.svg/1200px-Tamil_Nadu_districts_map.svg.png" alt="TamilNadu" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:'Times New Roman';">History</h2>
+      <hr>
+     <p><br>Tribes of Tamil Nadu are mainly found in the district of Nilgiris. Of all the distinct tribes,
+        the Kotas, the Todas, the Irulas, the Kurumbas and the Badagas form the larger groups,
+        who mainly had a pastoral existence. The men from each family of this tribe are occupied
+        in milking and grazing their large herds of buffaloes; a very common form of pastoral
+        farming. This tribe is distinguished by their traditional costume; a thick white cotton
+        cloth having stripes in red, blue or black, called puthukuli worn by both women and
+        men over a waist cloth. They settle mainly in Munds, comprising of five-six typical
+        wagon shaped, windowless split bamboo, reeds and thatch huts. They do not worship
+        any God and their consciousness is cosmic.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in Tamil Nadu</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">The Badagas</h3>
+            <a class="telanganaimage" href="gond.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Badagas.jpg" alt="badagastribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none; text-align: justify;"><br>
+                They belong to the backward class and are not classified as tribals. They comprise of an agricultural community and settle near Nilgiris of Tamil Nadu. They are engaged in tea cultivation and potato growing. They speak a language which is a mixture of Tamil and Kannada language. They form the largest group of tribes and boast of a rich oral tradition of folktales,songs and poetry. These tribes are Hindus and belong to the Shiva sect. The Badagas celebrate the Hindu festivals such as Diwali, and the famous festival of Pongal.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;">
+            <h3 style="color: brown;text-decoration:underline">The Irulas</h3>
+            <a class="telanganaimage" href="yerukula.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Irulas1871.jpg/800px-Irulas1871.jpg" alt="irulas" height="300px"style="align-items:center" ></a>
+        <p style="text-align: justify;">
+         <br>These tribes of Tamil Nadu occupy the lower slopes and forests at the base of the
+         Nilgiri hills. This tribe is famous for snake catching and removing the venom. It is often
+         said that the people of these tribes are called upon whenever a native require any
+         medical / herbal assistance. They are the second largest group of tribes after the Badagas
+         and they are largely similar to the Kurumba tribe of Tamil Nadu. This tribe produces
+         honey, fruits, herbs, roots, gum, dyes etc., and trades them with the people in the plains.
+         They are also gradually changing from their earlier ways of hunting to a more modern
+         form of living.
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">The Kotas</h3>
+            <a class="telanganaimage" href="chenchu.html"> <img src="https://th-i.thgim.com/public/incoming/81n3p0/article66355902.ece/alternates/LANDSCAPE_1200/10214_4_1_2023_16_42_33_2_SAT_7622.JPG" alt="kotastribes" height="300px"style="align-items:center" ></a>
+        <p style="text-align: justify;"><br>
+            They are mainly concentrated in the Tiruchigadi area in the Nilgiris Hills. They are
+            distinguished by their colourful folk dances and are basically musicians. They are mainly
+            engaged in producing handicrafts. These tribes of Tamil Nadu are expert iron smiths,
+            potters and carpenters. Their population is very small and they live in huts that have a
+            living and sleeping area and a place of worship. Their language is similar to that of the
+            Badagas. They speak Tamil and a form of Kanada language.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of Telanagana
+        <a href="tamilnadutribes.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

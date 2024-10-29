@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghalaya</title>
+    <link rel="stylesheet" href="state.css">
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>MEGHALAYA</h1></header>
+    <br>
+    <br>
+    <a class="telanganaimage"> <img src="https://www.mapsofindia.com/maps/meghalaya/meghalaya-index-map-2020.jpg" alt="Telanganamap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:'Times New Roman';">History</h2>
+      <hr>
+     <p><br>Meghalaya, situated in northeastern India, is home to several indigenous tribes, each with its own unique cultural heritage. Notable tribes in Meghalaya include the Khasi, Garo, and Jaintia communities. The Khasi tribe, one of the largest ethnic groups in the state, primarily resides in the Khasi Hills region and is known for its matrilineal society, traditional music, and vibrant festivals such as Shad Suk Mynsiem. The Garo community, concentrated in the Garo Hills district, have a rich cultural heritage characterized by their unique architecture, traditional dance forms, and intricate bamboo craftsmanship. The Jaintia tribe, primarily found in the Jaintia Hills district, are known for their expertise in coal mining, traditional handicrafts, and music. Despite facing challenges such as environmental degradation and socio-economic changes, these tribes continue to preserve their cultural traditions and contribute to the cultural diversity of Meghalaya.
+    </p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in Nagaland</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"> <h3 style="color: brown;text-decoration: underline;">The Khasi</h3>
+            <div class="telanganaimage" > <img src="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2023/5/17/13/26/40/Who_are_Khasi_people.jpg" alt="gondtribes" height="300px"style="align-items:center" ></div>
+            <p style="color: black; text-decoration:none;"><br>
+                The Khasi tribe is one of the largest indigenous communities in Meghalaya. They predominantly reside in the Khasi Hills region and are known for their matrilineal society, traditional music, dance forms, and vibrant festivals such as Shad Suk Mynsiem.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Garo Tribe</h3>
+            <div class="telanganaimage"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/GARO_TRADITIONAL_DRESS-9.jpg" alt="Lambada" height="300px"style="align-items:center;margin-left=200px;text-align=justify"  ></div>
+        <p >he Garo tribe is another major ethnic group in Meghalaya, primarily inhabiting the Garo Hills district. They have a rich cultural heritage characterized by unique architecture, traditional dance forms, and intricate bamboo craftsmanship. The Garos also have their own distinct festivals and rituals.
+         <br>
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Jaintla Tribe</h3>
+            <div class="telanganaimage" > <img src="https://www.indianetzone.com/photos_gallery/202/Jaintia_Tribe__Tribes_of_Meghalaya_1.jpg"alt="chenchutribes" height="300px"style="align-items:center" ></div>
+        <p><br>
+            The Jaintia tribe primarily resides in the Jaintia Hills district of Meghalaya. They are known for their expertise in coal mining, traditional handicrafts, and music. The Jaintias also have their own cultural practices, including traditional clothing and festivals.
+
+
+
+
+
+
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of Nagaland
+        <a href="nagalandtribes.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjab</title>
+    <link rel="stylesheet" href="state.css">
+    
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+</head>
+<body>
+
+
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>PUNJAB</h1></header>
+    <br>
+    <br>
+    <a class="punjabimage"> <img src="https://diligentias.com/wp-content/uploads/2019/05/Punjab-768x880.jpg" alt="punjabmap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:sans-serif;">HISTORY</h2>
+     <p><br> Punjab, with its historical significance dating back to ancient civilizations, has embraced a contemporary ethos that prioritizes the empowerment of its tribal communities. The Bhutia, Sippi, and Bazigar tribes find support through state initiatives focused on education, healthcare, and economic development. Punjab's cultural kaleidoscope, painted with the hues of traditional dance forms, music, and vibrant festivals, showcases a commitment to preserving its rich heritage while steering towards progressive development. The state's harmonious integration of historical roots and modern aspirations underscores a narrative that values inclusivity and the sustained cultural vibrancy of its diverse populace.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in PUNJAB</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">Bhutia Tribe</h3>
+            <a class="punjabimage" href="bhutia.html"> <img src="https://qph.cf2.quoracdn.net/main-qimg-d3d403ace9f2005a4fcacc9438d913f3-lq" alt="bhutiatribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none;"><br>
+                The Bhutia tribe, recognized as a Scheduled Tribe in Punjab, holds a distinct cultural identity in the state. Primarily found in certain pockets, they contribute to Punjab's diversity with unique customs and traditions. Efforts have been made by the government to address the socio-economic needs of the Bhutia community, ensuring their inclusion and welfare in the broader context of Punjab's development.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Sippi Tribe</h3>
+            <a class="punjabimage" href=""> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Photograph_of_Sikh_girls_enrolled_in_a_school_run_by_the_Church_Missionary_School%2C_Amritsar%2C_1875.jpg/220px-Photograph_of_Sikh_girls_enrolled_in_a_school_run_by_the_Church_Missionary_School%2C_Amritsar%2C_1875.jpg" alt="Sippi" height="300px"style="align-items:center" ></a>
+        <p >
+         <br>
+         The Sippi tribe, recognized as a Scheduled Tribe in Punjab, enriches the state's cultural panorama with distinctive traditions and practices. Despite their smaller population, the Sippi community is acknowledged for its unique contributions, and targeted government initiatives focus on addressing their socio-economic needs, ensuring their integral role in Punjab's diverse narrative of development.
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Bazigar Tribe</h3>
+            <a class="punjabimage" href=""> <img src="https://c8.alamy.com/zooms/9/0a2a2e2b73854ee6a66fe1ee0110f7de/fj29ke.jpg" alt="Bazigar" height="300px"style="align-items:center" ></a>
+        <p><br>
+           The Bazigar tribe were previously nomadic with their main occupation the performance of acrobatics and other forms of entertainment, but they are now settled and engaged mainly in agricultural and similar forms of labour.
+
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of PUNJAB
+        <a href="punjabtribe.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+</body>
+</html>

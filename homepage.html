@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s; 
+        }
+
+        nav a:hover {
+            color: black; 
+        }
+        #ask-me-button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        #ask-me-button:hover {
+            background-color: #2980b9; 
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s; 
+        }
+
+        input:hover {
+            border-color: #4CAF50; 
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        button:hover {
+            background-color: #2c3e50; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+    <script>
+        function searchFunction() {
+            var searchQuery = document.getElementById("search").value.toLowerCase();
+            var destinationPage;
+            switch (searchQuery) {
+                case "telangana":
+                    destinationPage = "telangana.html";
+                    break;
+                case "andhrapradesh":
+                    destinationPage = "andhrapradesh.html";
+                    break;
+                case "arunachal pradesh":
+                    destinationPage = "arunachalpradesh.html";
+                    break;
+                 case "assam":
+                    destinationPage= "assam.html";
+                    break;
+                case "bihar":
+                    destinationPage="bihar.html";
+                    break;
+                case "chattisgarh":
+                    destinationPage= "chattisgarh.html";
+                    break;
+                case "gujarat":
+                      destinationPage="gujarat.html";
+                      break;
+                case "haryana":
+                    destinationPage="haryana.html";
+                    break;
+                case "himachal":
+                    destinationPage="himachal.html";
+                    break;
+                case "jammu":
+                    destinationPage="jammu.html";
+                    break;
+                case "jharkhand":
+                    destinationPage="jharkhand.html";
+                    break;
+                case "karnataka":
+                    destinationPage="karnataka.html";
+                    break;
+                case "kerala":
+                    destinationPage="kerala.html";
+                    break;
+                case "madyapradesh":
+                    destinationPage="madyapradesh.html";
+                    break;
+                case "maharashtra":
+                    destinationPage="maharashtra.html";
+                    break;
+                case "manipur":
+                    destinationPage="manipur.html";
+                    break;
+                case "meghalaya":
+                    destinationPage="meghalaya.html";
+                    break;
+                case "mizoram":
+                    destinationPage="mizoram.html";
+                    break;
+                case "nagaland":
+                    destinationPage="nagaland.html";
+                    break;
+                case "odisha":
+                    destinationPage="odisha.html";
+                    break;
+                case "punjab":
+                    destinationPage="punjab.html";
+                    break;
+                case "rajasthan":
+                    destinationPage="rajasthan.html";
+                    break;
+                case "sikkim":
+                    destinationPage="sikkim.html";
+                    break;
+                case "tamilnadu":
+                    destinationPage="tamilnadu.html";
+                    break;
+                case "telangana":
+                    destinationPage="telangana.html";
+                    break;
+                case "uttarakhand":
+                    destinationPage="uttarakhand.html";
+                    break;
+                case "uttarpradesh":
+                    destinationPage="uttarpradesh.html";
+                    break;
+                    case "sikkim":
+                        destinationPage="sikkim.html";
+                        break;
+                case "telanaganatribe":
+                    destinationPage="telanganatribe.html";
+                    break;
+                case "gujarattribe":
+                    destinationPage="gujarattribe.html";
+                    break;
+                case "tripura":
+                    destinationPage="tripura.html";
+                    break;
+                case "punjabtribe":
+                    destinationPage="punjabtribe.html";
+                    break;
+
+                
+                default:
+                    destinationPage = "OH NOO";
+            }
+
+            window.location.href = destinationPage;
+        }
+        function redirectToAskMePage() {
+            var askMePageURL = "bot1.html";
+            window.location.href = askMePageURL;
+        }
+        var suggestions = [
+            "Telangana",
+            "Andhra Pradesh",
+            "Arunachal Pradesh",
+        ];
+
+        function showSuggestions() {
+            var input = document.getElementById("search").value.toLowerCase();
+            var suggestionsContainer = document.getElementById("suggestions-container");
+            suggestionsContainer.innerHTML = "";
+
+            if (input.length > 0) {
+                var matchingSuggestions = suggestions.filter(function(suggestion) {
+                    return suggestion.toLowerCase().includes(input);
+                });
+
+                matchingSuggestions.forEach(function(suggestion) {
+                    var suggestionElement = document.createElement("div");
+                    suggestionElement.textContent = suggestion;
+                    suggestionElement.addEventListener("click", function() {
+                        document.getElementById("search").value = suggestion;
+                        suggestionsContainer.innerHTML = ""; 
+                    });
+                    suggestionsContainer.appendChild(suggestionElement);
+                });
+
+                suggestionsContainer.style.display = "block";
+            } else {
+                suggestionsContainer.style.display = "none";
+            }
+        }
+        document.addEventListener("click", function(event) {
+            var suggestionsContainer = document.getElementById("suggestions-container");
+            var searchInput = document.getElementById("search");
+
+            if (event.target !== searchInput && event.target.parentNode !== suggestionsContainer) {
+                suggestionsContainer.style.display = "none";
+            }
+        });
+       
+    </script>
+
+</body>
+</html>

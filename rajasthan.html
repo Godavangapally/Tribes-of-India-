@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJASTHAN</title>
+    <link rel="stylesheet" href="state.css">
+    
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>RAJASTHAN</h1></header>
+    <br>
+    <br>
+    <a class="rajasthanimage"> <img src="https://diligentias.com/wp-content/uploads/2019/05/rajasthan.jpg" alt="Rajasthanmap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:sans-serif;">HISTORY</h2>
+     <p><br> Rajasthan, a canvas painted with the hues of Rajput valor, Mughal splendor, and post-independence progress, unfolds a captivating narrative in the heart of India. Majestic forts and opulent palaces bear witness to the tales of Mewar, Marwar, and Amber, while the Pink City of Jaipur embodies a harmonious blend of historical grandeur and contemporary strides. Amidst this cultural tapestry, the diverse tribal communities, including the Bhils, Meenas, Garasias, and Sahariyas, contribute their unique traditions and resilience to Rajasthan's rich mosaic. The state's commitment to inclusive development is evident in comprehensive initiatives addressing the specific needs of these tribes, encompassing education, healthcare, and socio-economic empowerment. Rajasthan, with its timeless heritage and dynamic present, stands as a testament to the coexistence of tradition and progress in the ever-evolving story of this enchanting region.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in RAJASTHAN</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">Bhil Tribe</h3>
+            <a class="rajasthanimage" href="bhil.html"> <img src="https://miro.medium.com/v2/resize:fit:670/1*mFwtnSHIkiZB8L4uYrIDdA.jpeg" alt="bhiltribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none;"><br>
+                The Bhil tribe, one of the largest tribal communities in Rajasthan, primarily resides in the hilly and forested regions of the state. Known for their rich cultural heritage, the Bhils have unique traditions, art forms, and rituals that contribute to the cultural diversity of Rajasthan. Their resilience and close connection to the natural environment characterize the Bhil tribe's way of life.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">MEENA</h3>
+            <a class="rajasthanimage" href=""> <img src="https://www.udaipurblog.com/wp-content/uploads/2022/09/meenasa.jpg" alt="Meena" height="300px"style="align-items:center" ></a>
+        <p >
+         <br>The Meena tribe, prominent in Rajasthan, is recognized for its distinct artistry and folklore, adding vibrancy to the state's cultural mosaic. With unique customs and traditions, the Meenas play an essential role in shaping the rich heritage of Rajasthan.
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Garasias Tribe</h3>
+            <a class="rajasthanimage" href=""> <img src="" alt="Garasias" height="300px"style="align-items:center" ></a>
+        <p><br>
+            The Garasia tribe, predominantly residing in the Aravalli region of Rajasthan, contributes to the state's cultural diversity with unique traditions and customs. Known for their close connection to the natural environment, the Garasias play a vital role in enriching the cultural tapestry of Rajasthan.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of RAJASTHAN
+        <a href="bhil.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+</body>
+</html>

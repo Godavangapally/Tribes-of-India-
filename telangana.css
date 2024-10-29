@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pagediv{
+    height:2500px;
+    width:1300px;
+    display:block;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px 20px 20px 20px; 
+    background-color:snow;
+}
+#heading1{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    font-weight: 400;
+}
+.telanganaimage{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+}
+.paradiv{
+    height:1900px;
+    width: 1000px;
+    text-align: left;
+    background-color: floralwhite;
+    font-family: 'Times New Roman';
+    font-size: 23px;
+    display: inline-block;
+    margin: 0;
+    border: 2px solid whitesmoke;
+    padding: 20px 20px 20px 20px;
+}
+.listdiv{
+    font-family: 'Times New Roman';
+    text-align: left;
+    padding-left: 10px;
+
+}

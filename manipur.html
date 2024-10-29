@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipur</title>
+    <link rel="stylesheet" href="state.css">
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>MANIPUR</h1></header>
+    <br>
+    <br>
+    <a class="telanganaimage"> <img src="https://www.burningcompass.com/countries/india/maps/manipur-district-map.jpg" alt="Telanganamap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:'Times New Roman';">History</h2>
+      <hr>
+     <p><br>Manipur boasts a vibrant tapestry of cultures, languages, and traditions. The state is inhabited by several major tribes, including the Meitei, Naga, Kuki, and Pangal (Manipuri Muslims), each with its own distinct customs, languages, and socio-cultural practices. The Meitei tribe, predominantly residing in the Manipur Valley, forms the majority population and has historically played a significant role in shaping the state's socio-political landscape. Known for their classical dance forms such as Manipuri Raas Leela and Sankirtana, the Meitei people have a rich artistic tradition that reflects their religious and cultural beliefs. The Naga tribes, including the Tangkhul, Mao, and Poumai, inhabit the hills and remote areas of Manipur, practicing a mix of animistic and Christian beliefs. The Kuki tribes, such as the Thadou, Hmar, and Paite, are spread across the hills and valleys of Manipur, known for their vibrant festivals, traditional music, and intricate handloom weaving. The Pangal community, predominantly residing in the Imphal Valley, follows Islam and has a unique cultural heritage blending elements of Manipuri and Islamic traditions. Together, these tribes contribute to the cultural mosaic of Manipur, fostering a spirit of diversity, tolerance, and unity in the state.
+    </p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in Manipur</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"> <h3 style="color: brown;text-decoration: underline;">Meitei Tribe</h3>
+            <div class="telanganaimage" > <img src="https://miro.medium.com/v2/resize:fit:850/1*fd-iMuDQAvER7P6yDuktDQ.jpeg" alt="gondtribes" height="300px"style="align-items:center" ></div>
+            <p style="color: black; text-decoration:none;"><br>
+                The Meitei tribe is the majority ethnic group in Manipur and primarily resides in the Imphal Valley. They have a rich cultural heritage, known for their classical dance forms, traditional attire, and religious festivals.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Naga Tribe</h3>
+            <div class="telanganaimage"> <img src="https://1.bp.blogspot.com/-873aMpM_2HY/W7Z59a85TTI/AAAAAAAAASQ/B9Q59qgcJ30JXz7y_4iT6PUFfkFWRdCjACLcBGAs/s1600/poumai.jpg" alt="Lambada" height="300px"style="align-items:center;margin-left=200px;text-align=justify"  ></div>
+        <p > The Naga tribes inhabit the hills and remote areas of Manipur. Some of the Naga tribes found in Manipur include the Tangkhul, Mao, Poumai, and Zeme, each with their own unique customs, languages, and cultural practices.
+         <br>
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Kuki Tribe</h3>
+            <div class="telanganaimage" > <img src="https://trci.tripura.gov.in/image/KUKI.jpg"alt="chenchutribes" height="300px"style="align-items:center" ></div>
+        <p><br>
+            The Kuki tribes are spread across the hills and valleys of Manipur. They comprise various subgroups such as Thadou, Hmar, Paite, and Zou. Known for their vibrant festivals, traditional music, and intricate handloom weaving, the Kuki tribes contribute significantly to Manipur's cultural diversity.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of Manipur
+        <a href="manipurtribes.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

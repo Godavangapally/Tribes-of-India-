@@ -1,0 +1,65 @@
+*{
+    font-family: 'Times New Roman';
+
+
+}
+div{
+    border: 2px solid whitesmoke;
+    display: flexbox;
+    font-size: 20px ;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image:linear-gradient(to left,whitesmoke,white);
+}
+.head{
+    background-image: url(https://www.shutterstock.com/image-vector/dark-blue-golden-abstract-tech-260nw-2011506185.jpg);
+    text-align: center;
+    font-size:40px ;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+.para{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+}
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+.image{
+    /* border: none; */
+    position: relative;
+    text-align: center;
+    right: 10px;
+    top: auto;
+}
+.images{
+    /* border: none; */
+    display:inline-block;
+}
+#festival1{
+    display: inline;
+    margin:50px;
+    padding:25px;
+    /* border: none; */
+    text-align: center;
+}
+.space{
+    padding-right: 25px;
+}

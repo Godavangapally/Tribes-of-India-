@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHARASHTRA</title>
+    <link rel="stylesheet" href="state.css">
+    
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>MAHARASHTRA</h1></header>
+    <br>
+    <br>
+    <a class="maharashtraimage"> <img src="maharashtra.jpg" alt="maharashtramap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:sans-serif;">History</h2>
+      <hr>
+     <p><br>Maharashtra, situated at the crossroads of India's history, has witnessed the ebb and flow of ancient empires, medieval kingdoms, and transformative socio-political movements. From the Satavahanas' cultural legacy to the medieval glory of the Yadavas, the region has been a melting pot of diverse influences. The Maratha Empire, under the visionary leadership of Chhatrapati Shivaji Maharaj, marked a significant chapter, challenging Mughal hegemony and shaping the political landscape. In the post-independence era, Maharashtra emerged as an economic powerhouse, especially with Mumbai as its vibrant commercial and cultural center. Amidst this dynamic backdrop, the state is also characterized by its rich tribal heritage, encompassing communities like the Bhils, Gonds, and Warlis. The government's proactive efforts in tribal welfare encompass a multifaceted approach, addressing education, healthcare, and infrastructure, thereby fostering the sustainable development and preservation of the unique cultural identity of these tribes within the broader mosaic of Maharashtra's history.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in MAHARASHTRA</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">Warli Tribe</h3>
+            <a class="maharashtraimage" href="warli.html"> <img src="warli .jpg" alt="warlitribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none;"><br>
+                The Warli tribe, indigenous to Maharashtra, is renowned for their unique Warli art featuring intricate geometric patterns. With a deep connection to agrarian life, the Warlis have preserved their cultural heritage, adding vibrancy to Maharashtra's diverse tapestry.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Bhil Tribe</h3>
+            <a class="maharashtraimage" href=""> <img src="https://miro.medium.com/v2/resize:fit:670/1*mFwtnSHIkiZB8L4uYrIDdA.jpeg" alt="Bhil" height="300px"style="align-items:center" ></a>
+        <p >
+         <br>
+         The Bhil tribe, one of Maharashtra's largest tribal communities, predominantly inhabits the hilly and forested regions. Renowned for their rich cultural heritage, the Bhil tribe is characterized by unique rituals, vibrant folklore, and traditional craftsmanship, contributing to the diverse cultural tapestry of the state.
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Koli Tribe</h3>
+            <a class="maharashtraimage" href=""> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1B6Z8G5sD0d3OBtuM-8uKrBrPAQGfriSlw&usqp=CAU" alt="Koli" height="300px" style="align-items: center;"></a>
+        <p><br>
+            The Koli tribe, primarily dwelling in Maharashtra's coastal areas, has a deep connection to maritime traditions and fishing communities. Known for their distinct cultural identity, the Kolis celebrate their heritage through traditional dances, music, and customs associated with coastal life.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of MAHARASHTRA
+        <a href="maharashtratribe.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

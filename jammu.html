@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMMU AND KASHMIR</title>
+    <link rel="stylesheet" href="state.css">
+    
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>JAMMU AND KASHMIR</h1></header>
+    <br>
+    <br>
+    <a class="jammuimage"> <img src="https://i.pinimg.com/originals/31/c4/d5/31c4d52542cb0c2f552cb3484ee4c6ba.jpg" alt="jammumap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:sans-serif;">History</h2>
+      <hr>
+     <p><br>Jammu and Kashmir, with its diverse cultural fabric, has historically engaged with tribal communities such as the Gujjar and Bakarwal. The region, prior to its reorganization in 2019, implemented various policies to address the socio-economic challenges faced by these communities, emphasizing education, healthcare, and preservation of cultural heritage. The state contributed towards the welfare of tribal people, recognizing their unique needs and traditional lifestyles. However, political unrest and security issues, inherent to the region, occasionally impacted the execution of these initiatives. Post-2019, the administrative changes may have influenced the dynamics of the region's contributions to tribal welfare, necessitating consultation of updated sources for a comprehensive understanding.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in JAMMU AND KASHMIR</h2>
+     <hr>
+     <br>
+    
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">Bakarwal Tribe</h3>
+            <a class="jammuimage" href="bakarwal.html"> <img src="https://i2.wp.com/www.radiochinar.in/wp-content/uploads/BAK-1.jpg?fit=500%2C332&ssl=1" alt="bakarwaltribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none;"><br>
+                The Bakarwals are a prominent tribal community in Jammu and Kashmir, closely associated with pastoralism and animal husbandry. Primarily herding sheep and goats, they lead a nomadic lifestyle, migrating to higher altitudes during the summer and descending to lower regions in the winter. The Bakarwals have distinct cultural practices, and their traditional way of life contributes to the rich tapestry of tribal diversity in the region.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Gujjar Tribe</h3>
+            <a class="jammuimage" href=""> <img src="https://static.independent.co.uk/2021/07/29/10/_DSC0261-01%20%281%29.jpeg?width=1200" alt="Gujjar" height="300px"style="align-items:center" ></a>
+        <p >
+         <br>
+         The Gujjars are a significant tribal community in Jammu and Kashmir known for their traditional engagement in nomadic pastoralism. These tribes often move with their herds, seeking grazing land for their livestock. With a distinct cultural identity, the Gujjars contribute to the region's diversity, and their communities are found across various parts of Jammu and Kashmir.
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Gaddi Tribe</h3>
+            <a class="jammuimage" href=""> <img src="https://cdn1.tripoto.com/media/filter/tst/img/1633963/Image/1681478973_gaddi_women.jpg.webp" alt="Gaddi" height="300px" style="align-items: center;"></a>
+        <p><br>
+            The Gaddis are a tribal community in Jammu and Kashmir, primarily residing in the hilly regions of Doda, Udhampur, and Reasi districts. Engaged in agriculture and sheep herding, the Gaddis have a distinct cultural identity. Their traditional practices, including unique folk traditions and rituals, enrich the cultural tapestry of the Jammu region.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of JAMMU AND KASHMIR
+        <a href="jammutribe.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

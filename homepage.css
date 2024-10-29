@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(TRIBES\ OF\ INDIA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  opacity: 0.8; /* Adjust the opacity as needed */
+}
+.navbar{
+background-color: #2c3e50; /* Dark background color */
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size */
+}
+.navbar a:hover {
+  background-color: #34495e; 
+  color: #ecf0f1; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.dropdown {
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #34495e; 
+  color: #ecf0f1; 
+  transition: background-color 0.3s, color 0.3s; 
+} ;
+.region-heading {
+  font-weight: bold;
+  color: black;
+  padding: 8px 0;
+}
+#suggestions-container {
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        width: 100%; /* Set the width to 100% to cover the full width of the input */
+    }
+
+    #suggestions-container div {
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    #suggestions-container div:last-child {
+        border-bottom: none;
+    }
+    input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+      color: black; /* Add this line to set the text color to black */
+  }
+  
+  input:hover {
+      border-color: #4CAF50;
+  }
+  
+

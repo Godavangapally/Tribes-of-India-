@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTTARPRADESH</title>
+    <link rel="stylesheet" href="state.css">
+    
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>UTTARAKHAND</h1></header>
+    <br>
+    <br>
+    <a class="uttarakhandimage"> <img src="https://diligentias.com/wp-content/uploads/2019/06/uttarakhand.jpg" alt="jammumap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:sans-serif;">History</h2>
+      <hr>
+     <p><br>Uttarakhand, carved out of the northern part of the state of Uttar Pradesh in 2000, has a rich history shaped by its cultural and geographical diversity. The state is home to various tribal communities, including the Bhotiya, Jaunsari, Tharu, and others, each with its unique cultural heritage. The government of Uttarakhand has undertaken initiatives to uplift tribal communities, focusing on education, healthcare, and socio-economic development. Efforts have been made to preserve and promote tribal cultures, traditions, and languages. Additionally, policies addressing land rights and livelihood opportunities aim to improve the overall well-being of these communities. The state government's contributions reflect a commitment to inclusive development, recognizing and addressing the specific needs of Uttarakhand's diverse tribal populations.</p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in UTTARAKHAND</h2>
+     <hr>
+     <br>
+    
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;"> <h3 style="color: brown;text-decoration: underline;">Jaunsari Tribe</h3>
+            <a class="uttarakhandimage" href="jaunsari.html"> <img src="https://i2.wp.com/www.radiochinar.in/wp-content/uploads/BAK-1.jpg?fit=500%2C332&ssl=1" alt="jaunsaritribes" height="300px"style="align-items:center" ></a>
+            <p style="color: black; text-decoration:none;"><br>
+                The Jaunsari tribe is an indigenous community residing in the Jaunsar-Bawar region of Uttarakhand. Known for their unique cultural practices, the Jaunsari people engage in traditional folk dances, rituals, and festivities that are integral to their identity. Agriculture is a significant part of their livelihood, and the community celebrates various festivals, contributing to the cultural richness of Uttarakhand. 
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Bhotiya Tribe</h3>
+            <a class="uttarakhandimage" href=""> <img src="https://www.euttarakhand.com/wp-content/themes/euainfo/thumbimg.php?src=https://www.euttarakhand.com/wp-content/uploads/2016/03/Kangdali-or-Kandali-festival-Rung.jpg&w=400&h=280" alt="Bhotiya" height="300px"style="align-items:center" ></a>
+        <p >
+         <br>
+         The Bhotiya tribe in Uttarakhand, with Tibetan origins, is primarily found in the higher altitudes of regions like Chamoli, Pithoragarh, and Uttarkashi. Renowned for their distinctive customs and traditional attire, the Bhotiyas have a unique cultural identity that reflects their historical ties to Tibet. Engaged in trade, agriculture, and animal husbandry, they contribute to the economic and cultural diversity of Uttarakhand, playing a vital role in shaping the region's rich heritage.
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;"><h3 style="color: brown;text-decoration:underline">Tharu Tribe</h3>
+            <a class="uttarakhandimage" href=""> <img src="https://media.assettype.com/knocksense%2F2022-11%2F799a3a19-6587-4987-8b23-16fe355d1b5b%2FTharu_Women.jpg" alt="Tharu" height="300px" style="align-items: center;"></a>
+        <p><br>
+            The Tharu tribe is predominantly located in the Terai region of Uttarakhand, near the Indo-Nepal border. Known for their agricultural expertise, particularly in rice cultivation, the Tharu people have a distinct language, traditions, and festivals that contribute to the cultural diversity of Uttarakhand. Their unique way of life and close connection to the natural surroundings make them an integral part of the region's rich cultural tapestry.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of UTTARAKHAND
+        <a href="uttarakhandtribe.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>

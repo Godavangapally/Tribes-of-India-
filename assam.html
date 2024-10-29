@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: black; 
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s; 
+}
+
+input:hover {
+    border-color: #4CAF50; 
+}
+
+button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #2c3e50; 
+}
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+    <div class="pagediv">
+        <header id="heading1">
+            <h1>ASSAM</h1>
+        </header>
+        <br>
+        <br>
+        <a class="telanganaimage"> <center><img src="https://i.pinimg.com/originals/95/60/b6/9560b6c0830875a133a97c615ce63a97.png"</center>s
+            alt="Telanganamap" height="400px" style="align-items: center"></a>
+        <br>
+        <br>
+
+        <div class="paradiv" style=" text-align:justify;font-family:'Times New Roman', Times, serif; font-size: 20px;">
+            <h2 style=" text-align:justify;font-family:'Times New Roman', Times, serif;">History</h2>
+            <hr>
+            <p><br>Assam and adjoining regions have evidences of human settlement from the beginning of the Stone Age. The hills at the height of 1,500 to 2,000 feet (460–615 m) were popular habitats probably due to availability of exposed dolerite basalt, useful for tool-making.[16] Ambari site in Guwahati has revealed Shunga-Kushana era artefacts including flight of stairs and a water tank which may date from 1st century BCE and may be 2,000 years old.</p>
+            <br>
+            <br>
+            <h2>List of Popular tribes in ASSAM</h2>
+            <hr>
+            <br>
+
+            <ul class="listdiv">
+                <li><a href="gond.html" target="_main">Bodo Tribe </a>
+                    <a class="telanganaimage" href="gond.html"><center> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2N7Ra8527ojvW1wuYA3csgc5tndkNqc_Ww&usqp=CAU"</center>
+                            alt="gondtribes" height="300px" style="align-items:center"></a>
+                    <p><br>
+                        The Bodo tribe is an indigenous community primarily residing in the northeastern region of India, particularly in the states of Assam, West Bengal, and Meghalaya. They have a rich cultural heritage characterized by their traditional dance forms, music, and festivals like the Bwisagu festival, celebrating the advent of spring. Agriculture is central to their livelihood, with rice being a staple crop, supplemented by fishing and animal husbandry. The Bodo language belongs to the Tibeto-Burman family and is written using the Devanagari script. Despite facing socio-political challenges and occasional conflicts, efforts are ongoing to preserve and promote their unique cultural identity and heritage.
+                    </p>
+                </li>
+                <br>
+                <li><a href="yerukula.html" target="_main">Garo</a>
+                    <a class="telanganaimage" href="yerukula.html"> <center><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FEfj1ohCn_DF0XhsH-PwfwIuWnnrgyvtSw&usqp=CAU"</center>
+                            alt="Lambada" height="300px" style="align-items:center"></a>
+                    <p>
+                        <br>The Garo tribe is one of the major indigenous communities inhabiting the Garo Hills region in the Indian state of Meghalaya and parts of Bangladesh. They have a matrilineal society where property and lineage are passed down through the female line. The Garo people primarily practice agriculture, cultivating crops such as rice, millet, and vegetables, supplemented by hunting and gathering. Traditional Garo festivals like Wangala, marking the harvest season, are significant cultural events that showcase their vibrant dances, music, and rituals. Despite modern influences, the Garo tribe maintains a strong connection to their traditional customs and beliefs, contributing to the rich cultural diversity of the region.
+                    </p>
+                </li><br>
+                <li><a href="chenchu.html" target="_main">CHAKMA</a>
+                    <a class="telanganaimage" href="chenchu.html"><center> <img
+                            src="data:image/jpeg;base64,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"</center>
+                            alt="chenchutribes" height="300px" style="align-items:center"></a>
+                    <p><br>
+                        Chakma oral history says they migrated to Arakan from the ancient kingdom of Magadha in the present Bihar state of India. The Chakma believe they are part of Buddha's Sakya clan of the Himalayan tribes. They gradually migrated to Arakan and extended their territory to the nearby hills of the Chittagong Hill Tracts.
+The Arakanese people referred to the Chakmas as Saks, Theks, or Thaikhs. In 1546 CE, while the Arakanese king Min Bin was fighting a battle with the Burmese, the Sak king attacked Northern Arakan Roma and occupied the Arakanese-controlled Chacomas of the Northern Arakan Mountains.
+                    </p>
+                </li>
+            </ul>
+            <br>
+            <p style=" color: cornflowerblue;"> Click here for detailed information about tribes of ASSAM
+            <button style="background-color:cornsilk; color:black; height: 30px; width: 50px;" href="assamtribes.html">Next</button></p>
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>

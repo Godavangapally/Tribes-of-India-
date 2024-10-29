@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizoram</title>
+    <link rel="stylesheet" href="state.css">
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s; 
+    }
+
+    nav a:hover {
+        color: black; 
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s; 
+    }
+
+    input:hover {
+        border-color: #4CAF50; 
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+
+    button:hover {
+        background-color: #2c3e50; 
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About</a>  
+            <a href="bot1.html" >
+                <button id="ask-me-button" onclick="redirectToAskMePage()">Ask Me</button>
+              </a>
+        </div>
+        <form onsubmit="searchFunction(); return false;" action="#" method="get" id="searchform">
+            <input type="text" id="search" name="q" placeholder="Enter your search query">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
+<div class="pagediv">
+    <header id="heading1"><h1>MIZORAM</h1></header>
+    <br>
+    <br>
+    <a class="meghalayaimage"> <img src="https://diligentias.com/wp-content/uploads/2019/05/Mizoramdistrictsmap.png" alt="meghalayamap" height="400px" style="align-items: center"></a>
+    <br>
+    <br>
+
+    <div class="paradiv">
+      <h2 style=" text-align:left;font-family:'Times New Roman';">History</h2>
+      <hr>
+     <p><br>Mizoram, located in northeastern India, has a history marked by the migration of Mizo tribes and their settlement in the region. Formerly part of Assam during British rule, it gained statehood in 1987. Mizoram has significantly contributed to the preservation of tribal cultures, empowering communities through initiatives in education and healthcare, promoting tribal handicrafts, conserving indigenous languages, and celebrating cultural diversity through festivals. The state's efforts reflect a commitment to sustaining and showcasing the rich heritage of its tribes, particularly the Mizo people.
+    </p>
+     <br>
+     <br>
+     <h2>List of Popular tribes in Mizoram</h2>
+     <hr>
+     <br>
+     
+     <ul class="listdiv">
+        <li style=" font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"> <h3 style="color: brown;text-decoration: underline;">The Mizo</h3>
+            <div class="mizoramimage" > <img src="https://www.tribaltoursinindia.com/wp-content/uploads/2020/11/main-qimg-782a19a63c04125874d9fd198cc01047-c.jpg" alt="mizotribes" height="300px"style="align-items:center" ></div>
+            <p style="color: black; text-decoration:none;"><br>
+                The Mizo tribe is the largest ethnic group in Mizoram, northeastern India, playing a central role in the state's cultural and social fabric. They have a distinct language known as Mizo, and their rich cultural heritage is evident in traditional festivals, dances, and rituals. Traditionally agrarian, the Mizo people have a close-knit community structure and a history marked by migration and settlement in the hills and valleys of the region.
+            </p>
+        </li>
+        <br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Lai Tribe</h3>
+            <div class="mizoramimage"> <img src="https://media.istockphoto.com/id/143922643/photo/vietnamese-minority-people-woman-from-red-dao-hill-tribe.jpg?s=612x612&w=0&k=20&c=bZMu3ZX9YcVLRXYcGVSe6tZz2FPaMoOUtu4s8xDjBRc=" alt="Lai" height="300px"style="align-items:center;margin-left=200px;text-align=justify"  ></div>
+        <p >The Lai tribe is a significant ethnic group in Mizoram, known for its unique language and cultural practices. Primarily engaged in agriculture, the Lai people have a strong connection to the land, and their traditional livelihoods contribute to the state's economic and cultural landscape. The Lai tribe, with its distinct customs and rituals, adds to the diverse tapestry of Mizoram's tribal heritage.
+         <br>
+
+        </p>
+    </li><br>
+        <li style="font-family: 'Times New Roman'; font-size: 20px;text-decoration: none;"><h3 style="color: brown;text-decoration:underline">Mara Tribe</h3>
+            <div class="mizoramimage" > <img src="https://www.amboseliparkkenya.com/wp-content/uploads/2022/02/Maasai-2-750x450.jpg"alt="maratribes" height="300px"style="align-items:center" ></div>
+        <p><br>
+            The Mara tribe is a prominent ethnic group in Mizoram, particularly in the southern region of the state. Known for their unique language and cultural traditions, the Mara people traditionally engage in activities such as agriculture and weaving. Their strong sense of community and distinctive customs contributes to the rich cultural diversity of Mizoram.
+        </p></li>
+     </ul>
+     <br>
+     <p style=" color: cornflowerblue;"> Click Here For Detailed Information About Tribes Of Nagaland
+        <a href="mizoramtribe.html">
+            <button style="background-color: cornsilk; color: black;height: 30px;width: 50px;">NEXT</button>
+
+        </a>
+    </div>
+    </div>
+
+    
+</body>
+</html>
